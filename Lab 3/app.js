@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     	.when('/', {
     		templateUrl: '/templates/home.html',
@@ -13,13 +13,13 @@ app.config(function($routeProvider) {
     	.when('/mashup', {
     		templateUrl: '/templates/mashup.html',
             controller: 'con_mashup'
-    	});
-
+        });
+    $locationProvider.html5Mode(true);
 });
 
 app.controller('con_home', function($scope) {
     $scope.pageClass = 'home';
-    $scope.title = "Home";
+    $scope.title = "Lab 3 Home Page";
 });
 
 app.controller('con_twitter', function($scope) {
@@ -29,4 +29,5 @@ app.controller('con_twitter', function($scope) {
 
 app.controller('con_mashup', function($scope) {
     $scope.pageClass = 'mashup';
+    $scope.title = "Mashup"
 });

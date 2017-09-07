@@ -1,1 +1,2 @@
 https://v4-alpha.getbootstrap.com/components/navbar/
+https://scotch.io/quick-tips/pretty-urls-in-angularjs-removing-the-hashtag

@@ -5,38 +5,45 @@
 	<!-- CSS -->
 	<!-- load bootstrap (bootswatch version) -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cover.css">
 	
 	<!-- JS -->
 	<!-- load angular, ngRoute, ngAnimate -->
 
 </head>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="/">Lab 3</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/twitter">Twitter (OAuth)</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/mashup">Mashup</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 <!-- apply our angular app -->
 <body ng-app="app">
-    <div class="{{ pageClass }}" ng-view></div>
-</body>
+    <div class="site-wrapper">
+            
+        <div class="site-wrapper-inner">
 
-<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
-<script src="app.js"></script>
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Noah's Lab 3</h3>
+                        <nav class="nav nav-masthead">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="/twitter">Twitter (OAuth)</a>
+                        <a class="nav-link" href="/mashup">Mashup</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="{{ pageClass }}" ng-view></div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>
