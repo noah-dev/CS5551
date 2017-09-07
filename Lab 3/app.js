@@ -3,15 +3,15 @@ var app = angular.module('app', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
     	.when('/', {
-    		templateUrl: 'home.html',
+    		templateUrl: '/templates/home.html',
             controller: 'con_home'
     	})
     	.when('/twitter', {
-    		templateUrl: 'twitter.html',
+    		templateUrl: '/templates/twitter.html',
             controller: 'con_twitter'
     	})
     	.when('/mashup', {
-    		templateUrl: 'mashup.html',
+    		templateUrl: '/templates/mashup.html',
             controller: 'con_mashup'
     	});
 
