@@ -1,3 +1,33 @@
 <div ng-app="app" ng-controller="con_mashup">
-    Welcome to {{title}}
+    <div class="content_box">
+        <h1>Youtube + Google Translate</h1>
+        <br>
+        <div class="input-group">
+            <input ng-model="keywords" type="text" class="form-control">
+            <span class="input-group-btn">
+                <button ng-click="submit()" class="btn btn-outline-warning btn-lg" type="button">Submit</button>
+            </span>
+        </div>
+        <br>
+        <div class = "pre-scrollable">
+            <h1>Translated to French</h1>
+            <br>
+            <div class="sub_box text-left">
+                <h4><b>{{translation}}</b></h4>
+            </div>
+            <br>
+            <h1>Top Trending YouTube Video</h1>
+            <br>
+            <div class="sub_box text-left">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4><b>{{title}}</b></h4>
+                    </div>
+                    <div class="col-md-8">
+                        <img ng-src="{{youtube_thumbnail}}" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

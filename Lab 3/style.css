@@ -1,0 +1,56 @@
+a {
+    text-decoration: none;
+    color: orange;
+    border-bottom: 0.2em dashed #E7E7E7;
+}
+a:link {
+    color: orange;
+    border-bottom: 0.2em dashed #E7E7E7;
+}
+a:hover{
+    text-decoration: none;
+    color: orange;
+    border-bottom: 0.2em solid #E7E7E7;
+}
+.cover{
+    color: orange;
+}
+.content_box{
+    color: orange;
+    width: 40em;
+    margin: 0 auto;
+}
+.pre-scrollable{
+    padding: 1em;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #E7E7E7;
+}
+
+.sub_box{
+    padding: 1em;
+    border: 0.5em solid orange;
+    border-radius: 1em;
+    background-color: #E7E7E7;
+    text-shadow: none;
+}
+.sub_box img{
+    width: 100%;
+}
+#login_button{
+    width: 100%;
+}
+  
+#login_button div{
+    margin: 0 auto;
+}

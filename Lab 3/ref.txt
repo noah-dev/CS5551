@@ -1,2 +1,8 @@
 https://v4-alpha.getbootstrap.com/components/navbar/
 https://scotch.io/quick-tips/pretty-urls-in-angularjs-removing-the-hashtag
+https://developers.google.com/identity/sign-in/web/build-button
+https://stackoverflow.com/questions/41543513/google-oauth2-0-logout-not-working-on-localhost-but-working-in-console
+https://stackoverflow.com/questions/10615872/bootstrap-align-input-with-button
+https://stackoverflow.com/questions/21693403/angularjs-action-on-click-of-button
+https://developers.google.com/youtube/v3/docs/search/list
+https://cloud.google.com/translate/docs/getting-started

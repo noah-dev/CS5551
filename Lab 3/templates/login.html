@@ -1,0 +1,21 @@
+<div ng-app="app" ng-controller="con_login" id = "login_page">
+    <div class="content_box">
+        <h1>Sign in with Google</h1>
+        <h4>(Social Login)</h4>
+        <br>
+        <div id="login_button"></div>
+        <br>
+        <div class="sub_box text-left">
+            <div class="row">
+                <div class="col-md-9">
+                    <h4>Hello <b>{{name}}</b></h4>
+                    <h4>Email Address</h4> 
+                    <h4><b>{{email}}</b></h4>
+                </div>
+                <div class="col-md-3">
+                    <img ng-src="{{profile_image_url}}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
