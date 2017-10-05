@@ -1,0 +1,14 @@
+{
+  "name": "ionic_v1_test",
+  "app_id": "",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
