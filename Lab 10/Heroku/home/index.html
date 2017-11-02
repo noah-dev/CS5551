@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    </head>
+    <body ng-app="currApp" ng-controller="currCont">
+        <div class="container">
+            <br>
+            <h2>Welcome to Noah's Lab 9</h2>
+            <label>Saved Currency Conversions (From USD)</label>
+
+            <div class="input-group" style="padding:5px">
+                <input style="width:1% " class="form-control " value = "Index" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "Convert (USD)" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "To Currency" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "Result" type="text"  disabled/>
+            </div>
+
+            <div class="input-group" ng-repeat="record in records" style="padding:5px">
+                <input style="width:1% "  class="form-control " value = "{{record.index}}" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "{{record.fromAmount}}" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "{{record.toCurrency}}" type="text" disabled/>
+                <input style="width:15% " class="form-control " value = "{{record.toAmount}}" type="text" disabled/>
+            </div>
+            <hr>
+            <b>Add a new a record</b>
+            <div class="input-group" style="padding:5px">
+                <input style="width:15% " class="form-control" ng-model="addFromAmount" placeholder="Amount in USD" type="text" />
+                <input style="width:15% " class="form-control" ng-model="addToCurrency" placeholder="To Currency" type="text" />
+                <span style="width:1%" ></span>
+                <button type= "button" class = "btn btn-primary" style="width:15%" ng-click="add()">Save and Add</button>
+            </div>
+            <hr>
+            <b>Update a record</b>
+            <div class="input-group" style="padding:5px">
+                <input style="width:1% "  class="form-control" ng-model="upIndex" placeholder="Index" type="text"/>
+                <input style="width:15% " class="form-control" ng-model="upFromAmount" placeholder="Amount in USD" type="text" />
+                <input style="width:15% " class="form-control" ng-model="upToCurrency" placeholder="To Currency" type="text" />
+                <span style="width:1%" ></span>
+                <button type= "button" class = "btn btn-primary" style="width:15%" ng-click="update()" >Update Existing</button>
+            </div>
+            <hr>
+            <b>Delete a record</b>
+            <div class="input-group" style="padding:5px">
+                <input style="width:1% " class="form-control "ng-model="delIndex"  placeholder="Index" type="text"/>
+                <span style="width:1%" ></span>
+                <button type= "button" class = "btn btn-primary" style="width:15%" ng-click="del()" >Delete</button>
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+
+</html>
